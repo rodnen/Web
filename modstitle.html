@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>site</title>
+	<script defer src="/examples/libs/chief-slider/chief-slider.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+
+html,body,.wrapper{
+	height: 100%;
+}
+
+html{
+	font-family : sans-serif,"Century Gothic","Arial";
+}
+<style type="text/css">
+.wrapper{
+	position: relative;
+}
+
+.mainContent {
+	margin-right : auto;
+	margin-left  : auto;
+	max-width: 1240px;
+}
+
+.mainContent > .content{
+	display: flex;
+	justify-content: center;
+	background: #F9F9F9;
+	padding-top:  30px;
+}
+.mainContent .container{
+	position: relative;
+	width: 60%;
+	height: 800px;
+	padding-right:  30px;
+	border-right:1px solid #dadada;
+}
+
+.mainContent .container .slider{
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.mainContent .container .name{
+	width: 100%;
+	height: auto;
+	margin: -50px 0 10px 0;
+	border-radius: 10px;
+}
+
+.mainContent .container .discription{
+	width: 100%;
+	height: auto;
+	/*background: #f5f5f5;*/
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+/*.mainContent .container .discription p{
+	padding: 15px;
+}*/
+
+.mainContent .sideContainer{
+	position: relative;
+	width: 23%;
+	height: 100%;
+	padding-left:  30px;
+}
+
+.mainContent .sideMenu{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #eeeeee;
+}
+	
+	.slider__control[data-slide=prev] {
+    	left: 0;
+	}
+
+	.slider__control[data-slide=prev]:hover{
+		background: #6D6D6D50;
+    	border-radius: 5px 0 0 5px;
+	}
+
+
+	.slider__control[data-slide=next] {
+    	right: 0;
+	}
+
+	.slider__control[data-slide=next]:hover {
+    	background: #6D6D6D50;
+    	border-radius: 0 5px 5px 0;
+	}
+
+	.active,.notActive{
+		padding: 0 10px;
+	}
+	.active span ,.notActive span{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+	}
+
+	.active span{
+		border: 15px solid #fff;
+	}
+
+	.notActive span{
+		border: 15px solid #E7E7E7;
+		opacity: 0.8;
+	}
+
+	.slider__control[data-slide=next] span{
+		transform: rotate(45deg);
+		border-left: none;
+		border-bottom: none;
+	}
+
+	.slider__control[data-slide=prev] span{
+		transform: rotate(45deg);
+		border-right: none;
+		border-top: none;
+	}
+
+	.slider__control {
+		transition: 0.3s;
+	    position: absolute;
+	    top: 50%;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    width: 40px;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 5px;
+	    height: 100%;
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	}	
+    .sliderItems {
+      counter-reset: slide;
+    }
+
+    .sliderItem{
+    	height: 400px;
+    	background: linear-gradient(135deg,#ECECEC,#D7D3D3,#B3ACAC);
+    	border-radius: 5px;
+    }
+
+
+    .mainContent > .content .stats{
+    	display: flex;
+    	justify-content: space-between;
+    	margin: 10px 0;
+    }
+
+
+    .mainContent > .content .date{
+    	display: inline-block;
+    	height: auto;
+    	border-radius: 5px;
+    	font-size: 13px;
+    	background: linear-gradient(76deg,#D0EDEE,#B7DBDC,#E2E2E2,#A7DBDD);
+    	text-align: center;
+    	padding: 10px;
+    }
+
+    .mainContent > .content .like{
+    	display: inline-block;
+    	height: 15px;
+    	border-radius: 5px;
+    	font-size: 13px;
+    	background: linear-gradient(76deg,#ECECEC,#DCB7B7,#E2E2E2);
+    	padding: 4px;
+    	margin: auto 0;
+    	display: flex;
+    	justify-content: space-between;
+    }
+
+     .sideMenu > .content .date div{
+    	margin: auto;
+    	text-align: center;
+    }
+
+     .sideMenu > .content .downloadInfo{
+    	width: 90%;
+    	text-align: center;
+    	height: 100px;
+    	border-radius: 10px;
+    	margin: 10px auto;
+    	position: absolute;
+    	font-size: 13px;
+    	bottom: 0;
+    	background-color: #f5f5f5;
+    	/*background: linear-gradient(120deg,#FE7898,#ED992E,#E04F95);*/
+    	
+    }
+    .sideMenu > .content .downl{
+    	width: 100%;
+    	background: linear-gradient(120deg,#E269E7,#BDB1F0,#CB69E7);
+    	border-radius: 10px 10px 0 0;
+    	padding: 10px 0;
+    	font-size: 14px;
+
+    }
+
+    .sideMenu > .content .info{
+    
+    	margin: auto;
+    	display:flex;
+    }
+
+    .sideMenu > .content #info{
+    	width: 70%;
+    	background: linear-gradient(120deg,#94F355,#A4D086,#A0DCE0);
+    	border-radius: 5px;
+    	padding: 10px 0;
+    	margin: 10px auto;
+    	display: flex;
+    	justify-content: space-evenly;
+
+    }
+
+    .sideMenu > .content .download{
+    	width: 15%;
+    	margin: 10px auto;
+    	border-radius: 5px;
+    	background:  linear-gradient(135deg,#B4E0A0,#78D899);
+    	
+    }
+
+    .sideMenu > .content{
+    	display: block;
+    	margin: 15px auto;
+    	width: 90%;
+    	height: 90%;
+    }
+
+
+    .sideMenu > .content .instruction{
+    	width: 100%;
+    	background-color: #f5f5f5;
+    	border-radius: 10px;
+    	text-align: center;
+    	padding: 0 0 10px 0;
+    }
+
+    .sideMenu > .content .instruction li{
+    	list-style: decimal;
+    	text-align: left;
+    	font-size: 13px;
+    	margin-block-start: 1em;
+    	margin-block-end: 1em;
+    	line-height: 18px;
+    }
+
+.heart-container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: 1s;
+  margin:0 5px;
+}
+
+.heart-container:hover .heart-fill{
+	fill: url(#Filled);;
+}
+
+.heart-stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #000;
+}
+
+.heart-fill {
+  transition: .5s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #d32f2f;
+}
+
+.filled{
+	fill: url(#Filled);
+}
+
+.notFilled{
+	fill: url(#Empty);
+}
+
+
+.instruction p{
+	width: 100%;
+    background: linear-gradient(120deg,#E269E7,#BDB1F0,#CB69E7);
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0;
+}
+
+.downloadIcon{
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	background: linear-gradient(100deg,#F1F1F1,#E8E5E5);
+	right: 21px;
+	bottom: 25px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px #cecece;
+}
+
+.downloadIcon::before{
+	content: "";
+	position: absolute;
+	width: 0; 
+  	height: 0; 
+  	border-left: 8px solid transparent;
+  	border-right: 8px solid transparent; 
+  	border-top: 8px solid #F1F1F1;
+  	bottom: 8px;
+  	right: 0px;
+	
+}
+
+.downloadIcon::after{
+	content: "";
+	position: absolute;
+	width: 6px; 
+  	height: 10px; 
+  	background: linear-gradient(100deg,#F1F1F1,#E8E5E5);
+  	bottom: 15px;
+  	right: 5px;
+  	box-shadow: 2px -1px 5px #cecece;
+	
+}
+
+  </style>
+
+<div class="wrapper">
+	<div class="mainContent">
+		<div class="content">
+			<div class="container">
+				<h3>Тип:Назва</h3>
+				<div class="stats">
+						<div class="date" >Дата завантаження, кількіть перглядів лайків коментів</div>
+						<div class="like">
+						<div class="heart-container">
+							<a href='#' class='heart-clip'>
+						   <svg width="20" height="20" viewBox="0 3 40 40" class='heart-fill notFilled'>
+						   	 <defs>
+						        <linearGradient id="Filled">
+						          <stop offset="5%" stop-color="#E05F5F" />
+						          <stop offset="40%" stop-color="#EE3F64" />
+						          <stop offset="95%" stop-color="#CF3939" />
+						        </linearGradient>
+						      </defs>
+
+						      <defs>
+						        <linearGradient id="Empty">
+						          <stop offset="25%" stop-color="#FAFAFA" />
+						          <stop offset="50%" stop-color="#EDEDED" />
+						          <stop offset="75%" stop-color="#D3D3D3" />
+						        </linearGradient>
+						      </defs>
+
+						   		<path d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
+						   </svg>
+						   <svg width="20" height="20" viewBox="1 3 38 38" class='heart-stroke'>
+						   		<path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+						   </svg>
+						   
+						   </a>
+						</div><span class="liked">Додати в улюблене</span></div>
+				</div>
+			    <div class="slider">
+			          <div class="sliderItems">
+			            <div class="sliderItem">
+			              <!-- Контент 1 слайда -->
+			            </div>
+			          </div>
+			      <a href="#" class="slider__control active" data-slide="prev">
+			      	<span></span>
+			      </a>
+			      <a href="#" class="slider__control notActive" data-slide="next">
+			      	<span></span>
+			      </a>
+			      <div class="discription"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+			    </div>
+			    
+ 			</div>
+ 			<div class="sideContainer">
+			<div class="sideMenu">
+				<div class="content">
+					<div class="instruction">
+						<p>Інструкція по встановленню</p>
+						<ul>
+							<li>Завантажте і встановіть <a href="">Minecraft Forge</a></li>
+							<li>Завантажте мод</li>
+							<li>Не розпаковуючи, скопіюйте в .minecraft\mods</li>
+							<li>Насолоджуйтесь</li>
+						</ul>
+					</div>
+					<div class="downloadInfo">
+					<div class="downl">Завантажити</div>
+					<div class="info">
+						<div id="info">
+							Розмір
+						</div>
+						<a href="" class="download"><span class="downloadIcon"></span></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div></body></html>

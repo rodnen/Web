@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>site</title>
+	<script defer src="/examples/libs/chief-slider/chief-slider.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	.block{
+		width: 250px;
+		height: 290px;
+		background: none;
+		z-index: 1;
+	}
+
+	.block .content{
+		width: 240px;
+		height: 290px;
+		box-shadow: 1px 1px 5px #cecece;
+		border-radius: 5px;
+		z-index: 1;
+	}
+
+	.block .type{
+		position: absolute;
+		margin: 20px 0 0 160px;
+		width: 100px;
+		height: 30px;
+		background:  linear-gradient(135deg,#42ffc8,#41fdba);
+		box-shadow: 1px 1px 5px #565656;
+		border-radius: 5px;
+		z-index: 2;
+	}
+	.block .type .line{
+		display: block;
+		width: 80%;
+		height: 10px;
+		background:  linear-gradient(125deg,#33e6b2,#4fe4b8);
+		margin:  0 auto 10px auto;
+	}
+
+	.block .type .fl{
+		display: block;
+		height: 10px;
+	}	
+
+	.block .picture{
+		position: relative;
+		width: 100%;
+		height: 60%;
+		background:  linear-gradient(135deg,#616161,#6e6e6e);
+		border-radius: 5px 5px 0 0;
+	}
+
+	.block .picture:hover,.block .type:hover .content .picture{
+		width: 100%;
+		height: 60%;
+		background:  #525252;
+		opacity: 0.8;
+	}
+
+	.block .picture:hover .circles{
+		visibility: visible;
+	}
+
+	.block .discription{
+		position: relative;
+		width: 100%;
+		height: 40%;
+		background:  #ffffff;
+		border-radius: 0 0 5px 5px;
+	}
+
+	.block .discription .line{
+		display: block;
+		width: 90%;
+		height: 10px;
+		background: #ececec;
+		margin:  0 auto 10px auto;
+	}
+
+	.block .discription .fl{
+		display: block;
+		height: 12px;
+	}
+
+	.delete, .update,.hide{
+		width: 20px;
+		height: 20px;
+		background:  linear-gradient(135deg,#42ffc8,#41fdba);
+		box-shadow: 2px 2px 5px #565656;
+		border-radius: 10px;
+		z-index: 2;
+	}
+
+	.delete:hover, .update:hover,.hide:hover{
+		background:  linear-gradient(135deg,#20bc79,#30c585);
+	}
+
+	.block .circles{
+		width: 10%;
+		padding: 5px;
+		visibility: hidden;
+	}
+
+	.block .circles div{
+		margin: 5px;
+	}
+
+</style>
+<div class="block">
+	<div class="type">
+		<span class="fl"></span>
+		<span class="line"></span>
+	</div>
+	<div class="content">
+	<a href="">
+		<div class="picture">
+			<div class="circles">
+				<a href=""><div class="delete"></div></a>
+				<a href=""><div class="update"></div></a>
+				<a href=""><div class="hide"></div></a>
+			</div>
+		</div>
+	</a>
+		<div class="discription">
+			<span class="fl"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
