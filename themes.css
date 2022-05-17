@@ -1,0 +1,670 @@
+html,body{
+	height: 100%;
+}
+html{
+	font-family : sans-serif,"Century Gothic","Arial";
+	height: 100%;
+}
+body{
+	margin     : 0;
+	padding    : 0;
+}
+header{
+	display: block;
+	width: 100%;
+	top:  0;
+	z-index: 10;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: #1c1c1e;
+	z-index: 10;
+}
+
+input,textarea,button,select,option {outline:none;border: none;}
+
+button{
+	background: none;
+	cursor: pointer;
+}
+
+ul{list-style : none;}
+
+a{text-decoration : none;}
+
+/*--------===============-=-===MAIN====-=-===============--------*/
+
+.flex{
+	display: flex;
+}
+
+.title-padding{
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.centered-axis-x {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 11;
+}
+
+.centered-axis-y {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, 0);
+    z-index: 11;
+}
+
+.super-litle-centered-axis-y {
+    position: absolute;
+    top: 23%;
+    transform: translate(-50%, 0);
+    z-index: 11;
+}
+
+.litle-centered-axis-y {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, 0);
+    z-index: 11;
+}
+
+.hidden{
+	visibility: hidden;
+	position: absolute;
+	top: 0%;
+    transform: translate(-50%, 0);
+    left: 0%;
+    transform: translate(-50%, 0);
+}
+
+.show{
+	visibility: visible;
+}
+
+.overflowY{
+	overflow-y: hidden;
+}
+
+.justify-center{
+	justify-content: center;	
+}
+
+.fixed{
+	position: fixed;
+	width: 100%;
+}
+
+.Margin{
+	margin-top: 113px;
+}
+
+
+
+/*--------===============-=-===LIGHT THEME====-=-===============--------*/
+.light {
+	background: #FAFAFA;
+}
+
+.light .Searching-Menu input,.light .Searching-Menu .input{
+    border-radius: 4px;
+    background-color: #F7F7F7;
+}
+
+.light .search i{
+	border-right: 1px solid #000;
+}
+
+.light .background{
+	padding-top: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.light .background-drop{
+	padding-top: 10px;
+	padding-right: 2px;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+}
+
+.light .background-shadow{
+	box-shadow: -1px 2px 5px #cecece;
+}
+
+.light .bookmark-for-title-active i{
+	color: #e0a91d;
+	font-size: 23px;
+}
+
+.light .bookmark-for-title i{
+	color: #000;
+	font-size: 23px;
+}
+
+/*--------===============-=-=ЛОГОТИП=-=-===============--------*/
+
+.light .top{
+	background: #fff;
+}
+
+.light header{
+	background: #fff;
+	border-bottom: 1px solid #dadada;
+}
+
+.light .gradientLogo{
+	background: #CECECE;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-left: 1px solid #DADADA; 	
+}
+/*--------===============-=-=======-=-===============--------*/
+
+
+/*--------===============-=-=МЕНЮ=-=-===============--------*/
+
+.light .top button,.light .top a{
+	color: #000;
+}
+
+.light .top .link:hover{
+	background: #F0F0F0;
+}
+
+/*--------===============-=-=======-=-===============--------*/
+
+/*--------===============-=-=ПРОФІЛЬ=-=-===============--------*/
+
+.light .editProfile .Icon{
+	background-color: #F8F8F8;
+}
+
+.light .profileList > div > a,.light .profileInfo > div > a,.light .dropbtn,.profileList > div > span{
+	color: #555555;
+	background-color: #F8F8F8;
+}
+
+.light .leftMenu .activeFolder,.light .leftMenu .activeFolder{
+	color: #555555;
+	background-color: #DCDCDC90;
+}
+
+.light .leftMenu .notactiveFolder:hover,.light .profileInfo div a:hover,.light .dropbtn:hover{
+	background-color: #EFEFEF;
+}
+
+.light .profileList div .countOfPublics{
+	color: #B4B4B4;
+}
+
+.light .profileList .Good{
+	background: #7EF07057;
+}
+
+.light .profileList .Good:hover{
+	background: #6DF84390;
+}
+
+.light .profileList .Bad{
+	background: #E74A1457;
+}
+
+.light .profileList .Bad:hover{
+	background: #F8433790;
+}
+
+.light .leftMenu ~ .foldersContent,.light .leftMenu ~ .content{
+	background-color: #f2f2f2;
+}
+
+.light .login input{
+	border:  1px solid #cecece;
+	border-left: none;
+	background: #F2F2F2;
+}
+
+.light .back{
+	background: #fff;
+}
+
+.light .back:hover{
+	background: #cecece;
+}
+
+.light .login .userLogin{
+	background: #1FABF3;
+}
+
+.light .userButtons input,.light .userButtons a{
+	color: #fff;
+	background: #383838;
+	border: 1px solid #cecece;
+}
+
+.light .userButtons input:hover,.light .userButtons a:hover{
+	background: #202020;
+}
+
+.light .SubmitAdding{
+	border-top: 1px solid #9A9A9A;
+}
+
+
+.light .SubmitAdding input{	
+	color: #fff;
+	background: #383838;	
+}
+/*---------------------------------------------*/
+
+.light .lastNews .publics .content a{
+	color: #000;
+}
+
+.light .lastNews .publics .discription{
+	color: #8D8D8D;
+}
+
+.light .NewPublics > .title,.light .rightPanel > .title,.publics form > .title{
+	border-bottom: 1px solid #9A9A9A;
+}
+
+.light .block .content{
+	box-shadow: 1px 1px 5px #cecece;
+}
+
+.light .textblock{
+	box-shadow: 1px 1px 5px #cecece;
+}
+
+.light .block .discription{
+	background:  #ffffff;
+}
+
+.light a{
+	color: #000;
+}
+
+.light .block .discription .pinfo{
+	color: #CACACA;
+}
+
+
+/*-------------------------------------------------*/
+
+.light .fileLabelImg,.light .fileLabelFile{
+	background: #fff;
+	border: 2px dashed #C3C3C3;
+}
+
+.light .download{
+	background: #37B87E;	
+}
+
+.light .download span{	
+	color: #000;	
+}
+
+.light .bi-download{
+	fill:  #000;
+}
+
+.light .instruction li{
+	color: #000;	
+}
+
+
+.light .thematic{
+	background: #F8AD58;
+	color: #000;	
+}
+
+.light .filledFile{
+	background: linear-gradient(90deg,#70E09E,#5AD38D);	
+	border: 2px solid #61D5AD;
+}
+
+.light .thematic-active{
+	background: #E5863D	;
+	color: #000;	
+}
+
+
+.light .pagination .active{
+	background: #F2F2F2;
+	
+}
+
+.light .pagination a{
+	border-radius: 4px;
+	padding: 5px 9px;
+	text-align: center;
+}
+.light .pagination{
+	justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+
+/************************************/
+.light .error-for-login,.light .error-for-else{
+	background: #FF6859;
+}
+
+.light .error-for-public b{
+	color: #EA4F47;
+}
+
+@media screen and (max-width: 1100px){
+	.light .menuList{
+		background-color: #fff;
+		color: #EA4F47;
+	}
+}
+/*--------===============-=-=======-=-===============--------*/
+/*/////////////////////////////////////////////////////////////*/
+/*--------===============-=-===DARK THEME====-=-===============--------*/
+.dark {
+	background: #141414;
+	color: #e3e3e3;
+}
+
+.dark .background{
+	padding-top: 20px;
+    border-radius: 4px;
+    background-color: #1c1c1e;
+}
+
+.dark .background-drop{
+	padding-top: 10px;
+	padding-right: 2px;
+    border-radius: 4px;
+    background-color: #232323;
+}
+
+.dark .background-shadow{
+	box-shadow: none;
+}
+
+.dark .Searching-Menu input,.dark .Searching-Menu .input{
+    border-radius: 4px;
+    background-color: #252525;
+}
+
+.dark .search i{
+	border-right: 1px solid #ecec;
+}
+
+.dark .bookmark-for-title-active > i{
+	color: #e0d51d;
+	font-size: 23px;
+}
+
+.dark .bookmark-for-title > i{
+	color: #DADADA;
+	font-size: 23px;
+}
+/*--------===============-=-=ЛОГОТИП=-=-===============--------*/
+
+.dark .top{
+	background: #1c1c1e;
+}
+
+.dark header{
+	background: #1c1c1e;
+}
+
+.dark .gradientLogo{
+		background: #686868;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		border-left: 1px solid #686868; 	
+}
+/*--------===============-=-=======-=-===============--------*/
+
+
+/*--------===============-=-=МЕНЮ=-=-===============--------*/
+
+.dark .top button,.dark .top a{
+	font-family: -apple-system,BlinkMacSystemFont,Open Sans,Roboto,Helvetica Neue,Helvetica,sans-serif;
+	color: #E3E3E3;
+	border-radius: 3px;
+}
+
+.dark .background-drop button,.dark .background-drop a{
+	color: #DADADA;
+	border-radius: 4px;
+}
+
+.dark .top .link:hover{
+	background: #292929;
+}
+
+.dark .top .background-drop .link:hover{
+	background: #313131;
+}
+
+
+/*--------===============-=-=======-=-===============--------*/
+
+/*--------===============-=-=ПРОФІЛЬ=-=-===============--------*/
+
+.dark .editProfile .Icon{
+	background-color: #000;
+}
+
+.dark .profileList > div > a,.dark .profileInfo > div > a,.dark .dropbtn,.dark .profileList > div > span{
+	color: #E3E3E3;
+	background-color: #1c1c1e;
+}
+
+.dark .profileList > div > .activeFolder{
+	color: #E3E3E3;
+	background-color: #262626;
+}
+
+.dark .profileList div .notactiveFolder:hover,.dark .profileInfo div a:hover,.dark .dropbtn:hover{
+	background-color: #353535;
+}
+
+.dark .profileList div .countOfPublics{
+	color: #B4B4B4;
+}
+
+.dark .profileList .Good{
+	background: #7EF07057;
+}
+
+.dark .profileList .Good:hover{
+	background: #6DF84390;
+}
+
+.dark .profileList .Bad{
+	background: #E74A1457;
+}
+
+.dark .profileList .Bad:hover{
+	background: #F8433790;
+}
+
+.dark .leftMenu ~ .foldersContent,.dark .leftMenu ~ .content{
+	background-color: #23232360;
+}
+
+.dark .username,.dark .bio{
+	color: #E3E3E3;
+}
+
+.dark input, .dark textarea,.dark select,.dark option,.dark .input{
+	border-left: none;
+	background: #333333;
+	color:#E3E3E3 
+}
+
+.dark .login .userLogin{
+	background: #383838;
+	color:#E3E3E3 ;
+}
+
+
+.dark .back{
+	background: #1c1c1e;
+	color:#E3E3E3 ;
+}
+
+.dark .back:hover{
+	background: #383838;
+}
+
+.dark .userButtons input,.dark .userButtons a{
+	color: #949494;
+	background: #2C2C2C;
+}
+
+.dark .userButtons input:hover,.dark .userButtons a:hover{
+	background: #202020;
+}
+
+.dark .SubmitAdding{
+	border-top: 1px solid #313131;
+}
+
+
+.dark .SubmitAdding input{	
+	color: #949494;
+	background: #2C2C2C;	
+}
+
+.dark .lastNews .title span{
+	color: #E3E3E3;
+}
+
+.dark .title-buttons{
+	margin-bottom: 10px;
+}
+
+.dark  a{
+	color: #B3B3B3;
+}
+
+.dark span,.dark .publics form > .title span,.dark .publics form > .AddPublic .labelTitle ,.dark .arrow-to-all{
+	color: #E3E3E3;
+}
+
+.dark .NewPublics > .title,.dark .rightPanel > .title,.publics form > .title{
+	border-bottom: 1px solid #313131;
+}
+
+.dark .block .content{
+	box-shadow: 1px 1px 5px #2E2E2E;
+}
+
+.dark .textblock{
+	box-shadow: 1px 1px 5px #cecece;
+}
+
+.dark .block .discription{
+	background:  #242424;
+}
+
+.dark .block .title,.dark .block .discription{
+	color: #E3E3E3;
+}
+
+.dark .block .discription .pinfo,.dark .block .likes,.dark .block .likes span,.dark .block .date{
+	color: #6F6F6F;
+}
+
+.dark .fileLabelImg,.dark .fileLabelFile,.dark .feedback__label{
+	background: #2C2C2C;
+	border: 2px dashed #6E6E6E;
+	color: #E3E3E3;	
+}
+
+.dark .download{
+	background: #313131;	
+}
+
+.dark .download span{	
+	color: #E3E3E3;	
+}
+
+.dark .bi-download{
+	fill:  #E3E3E3;
+}
+
+.dark .instruction li{
+	color: #E3E3E3;	
+}
+
+.dark .discription{
+	color: #E3E3E3;	
+}
+
+
+.dark .filledFile{
+	background: linear-gradient(90deg,#50B894,#1E9571);	
+	border: 2px solid #478976;
+}
+
+
+.dark .thematic{
+	background: #D5752A;
+	color: #000;	
+}
+
+.dark .thematic-active{
+	background: #B36629;
+	color: #000;	
+}
+
+
+.dark .pagination .active{
+	background: #313131;
+	
+}
+
+.dark .pagination a{
+	border-radius: 4px;
+	padding: 5px 9px;
+	text-align: center;
+}
+.dark .pagination{
+	justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+/************************************/
+.dark .error-for-login,.dark .error-for-else{
+	background: #b30d09;
+	color: #E3E3E3;
+	box-shadow: none;
+}
+.dark .error-for-public{
+	color: #b30d09;
+	box-shadow: none;
+}
+/*--------===============-=-=======-=-===============--------*/
+/*///////////////////////////////////////////////////////////*/
+
+
+
+
+@media screen and (max-width: 1100px){
+	.light .menuList{
+		background-color: #fff;
+		color: #EA4F47;
+	}
+
+	.dark .menuList{
+		background-color: #1c1c1e;
+		color: #EA4F47;
+	}
+}

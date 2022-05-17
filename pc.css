@@ -1,0 +1,1074 @@
+@media screen and (min-width: 1100px) {
+
+.wrapper{
+	position: relative;
+	z-index: 1;
+	min-height: 100%;
+	padding: 20px 0;
+	margin-top: 113px;
+}
+
+
+
+/*--------===============-=-=ЛОГОТИП=-=-===============--------*/
+.top{
+	max-width: 1100px;
+	height: 75px;
+	-webkit-box-align: center;
+	align-items: center;
+	margin: 0 auto;
+	justify-content:space-between;
+	width: 100%;
+}
+
+.top .menuUser i{
+	font-size: 20px;
+}
+
+.top .menuUser #changeTheme,.top .menuUser #addpublic{
+	height: 40px;
+	width: 40px;
+	padding: 2px;
+}
+
+.top .menuUser #search{
+	display: none;
+}
+
+
+.top .menuUser  a{
+	font-size: 15px;
+	margin: 0 14px;
+}
+
+.Logo{
+	width: auto;
+	height: 50px;
+	align-items: center;
+}
+
+.Logo img{
+	height: 55px;
+	width: 55px;
+}
+
+.top .showUserMenu{
+	display: none;
+}
+
+.gradientLogo{
+	font-family: sf-ui-text-medium,sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+}
+
+/*--------===============-=-=МЕНЮ=-=-===============--------*/
+.top button, .top .menuList .link,.top .menuUser a {
+	font-size: 15px;
+	padding: 12px;
+}
+
+
+.top .menuList .profileLogo,.top .menuList #hideMenu{
+	display: none;
+}
+
+.top #profile{
+	width: 50px;
+	height: 50px;
+	border-radius: 4px;
+	margin: 0 5px;
+}
+
+.top #profile img{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+
+.top .menuList button,.top .menuList .menulink{
+	margin: 40px;
+}
+.top .menuList i{
+	vertical-align: middle;
+	font-size: 20px;
+}
+
+.top .addpublic{
+	flex-direction: column;
+	position: absolute;
+	z-index: 12;
+	top: 68px;
+	margin-left: -20px;
+	padding: 5px;
+	font-size: 10px;	
+}
+
+.top .categories{
+	flex-direction: column;
+	position: absolute;
+	z-index: 12;
+	top: 68px;
+	margin-left: 25px;
+	padding: 10px;
+	font-size: 10px;
+}
+
+.top .categories a{
+	padding: 7px;
+	margin: 7px;
+}
+
+.top .profile{
+	flex-direction: column;
+	position: absolute;
+	z-index: 10;
+	top: 68px;
+	margin-left: 25px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+.top .profile i,.top .addpublic i {
+	padding: 2px;
+	font-size: 17px;
+	vertical-align: middle;
+}
+
+.top .profile a,.top .addpublic a{
+	padding: 5px;
+	margin: 7px;
+	font-size: 14px;
+}
+
+.Searching-Menu{
+	flex-direction: column;
+	z-index: 12;
+	top: 25px;
+	width: 740px;
+	left: 25%;
+}
+
+.Searching-Menu > .Finded .wrapper-center > span{
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+	margin: auto;
+}
+
+.Finded{
+	width:750px;
+	margin: 30px 0;
+	padding-bottom: 20px;
+	overflow-y: scroll;
+	max-height: 550px;
+}
+
+.search{
+	width: 100%;
+	font-size: 27px;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.search input{
+	width: 100%;
+	height: 40px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.search .input{
+	border-radius: 4px;
+	width: 100%;
+	align-items: center;
+	padding-left: 10px;
+	margin: auto;
+}
+
+.search i{
+	padding-right: 7px;
+}
+
+/*--------===============-=-=======-=-===============--------*/
+
+
+
+/*--------===============-=-=ФУТЕР=-=-===============--------*/
+
+.footerLogo{
+	max-width: 1200px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	margin:auto;
+}
+
+/*--------===============-=-=Сторінка=-=-===============--------*/
+.mainContent {
+	margin-right : auto;
+	margin-left  : auto;
+	max-width: 1240px;
+}
+
+.mainContent > .content{
+	justify-content: center;
+	width: fit-content;
+	margin: auto;
+}
+
+.mainContent > .content > .allPublicsContent{
+	width: 760px;
+}
+
+.mainContent > .content > .publicPicture{
+	width: 700px;
+}
+
+.mainContent .container{
+	position: relative;
+	width: 60%;
+	height: 800px;
+	padding-right:  30px;
+	border-right:1px solid #dadada;
+}
+
+.mainContent .container .slider{
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.mainContent .container .slider:hover .slider__control{
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.mainContent .container .name{
+	width: 100%;
+	height: auto;
+	margin: -50px 0 10px 0;
+	border-radius: 10px;
+}
+
+.mainContent .container .discription{
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+.mainContent .sideContainer{
+	position: relative;
+	width: 23%;
+	height: 100%;
+	padding-left:  30px;
+}
+
+.mainContent .sideContainer .sideMenu{
+	position: relative;
+	width: 100%;
+	height: 370px;
+}
+
+.mainContent > .content .stats{
+   margin: 10px 0;
+   justify-content: space-between;
+   
+}
+
+
+.mainContent > .content .nameDate{
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.mainContent > .content .like{
+	height: 35px;
+    font-size: 22px;
+    padding: 2px;
+    margin: auto 0;
+}
+
+.download{
+	width: 80%;
+	margin:10px auto;
+	border-radius: 4px;
+	justify-content: center;	
+}
+
+.download span{	
+	margin: auto;	
+}
+.bi-download{
+	margin: 3px;
+}
+
+.instruction li{
+	margin: 15px;
+}
+
+/*--------===============-=-=Профіль користувача=-=-===============--------*/
+
+.editProfile{
+	width: 80%;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 30px;
+	
+}
+
+.editProfile .Icon{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border-radius: 5px;
+	margin: auto 20px;	
+}
+
+.editProfile .Icon img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+
+
+.editProfile .HeaderPictr{
+	position: relative;
+	width: 400px;
+	height: 130px;
+	margin: 20px;
+}
+
+.editProfile .HeaderPictr img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+
+.editProfile .ChangeIcon{
+	width: 100%;
+	justify-content: safe start;
+}
+
+
+
+.editProfile .Input{
+	width: 100%;
+	margin: 20px;
+}
+
+.editProfile .Input input,.editProfile .Input textarea{
+	width: 90%;
+	padding: 13px;
+	border-radius: 4px;
+	border: none;
+}
+
+.profileContent {
+	margin-right : auto;
+	margin-left  : auto;
+	max-width: 1140px;
+	display: flex;
+	flex-direction: row;
+}
+
+.leftMenu{
+	height: 100%;
+	width: 350px;
+	flex-direction: column;
+}
+
+.leftMenu .profileInfo{
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.profileInfo .profileIcon{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	margin: 10px 0;
+	/*background-position: center center;*/
+	/*background-size: cover;*/
+}
+
+.profileInfo .profileIcon img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+
+.profileInfo .bio{
+	font-size: 12px;
+	padding: 10px;	
+}
+
+.profileInfo .profile{
+	text-align: center;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 3px;
+
+	border-radius: 10px;
+}
+
+.profileInfo .profile:hover{
+	background-color: #6B6B6B30;
+}
+
+.leftMenu .list{
+	width: 100%;
+	height: fit-content;
+}
+
+.profileList{
+	margin: 20px;
+}
+
+.leftMenu div,.profileInfo div{
+	display: flex;
+	flex-direction: column;
+	max-width: 1300px;
+}
+
+.leftMenu .folder,.leftMenu .type,.leftMenu  a,.dropbtn,.profileList > div > span{
+	display: inline-block;
+	margin: 10px 0;
+	text-decoration: none;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.leftMenu .folder,.leftMenu .type,.profileList > div > .activeFolder{
+	display: inline-block;
+	margin: 1px 0;
+	text-decoration: none;
+	padding: 12px;
+	font-family: sans-serif;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.profileList div .countOfPublics{
+	float: right;
+	font-size: 10px;
+	padding: 2px;
+}
+
+
+.leftMenu ~ .foldersContent, .leftMenu ~ .content{
+	height: inherit;
+	width: 100%;
+	margin: 0;
+}
+
+.headerPictr{
+	position: relative;
+	margin-right : auto;
+	margin-left  : auto;
+	width: 1140px;
+	height: 250px;
+	flex-direction: row;
+}
+
+.headerPictr img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+.feedback__label {
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 120px;
+	border-radius: 3px;
+	font-family: OpenSans;
+	font-size: 60px;
+	text-align: center;
+	cursor: pointer;
+	border: 2px dashed lightgrey;
+}
+
+.feedback__file {
+  display: none;
+}
+/*--------===============-=-=Авторизація=-=-===============--------*/
+.login{
+	width: 400px;
+	height: auto;
+	flex-direction: column;
+	padding: 30px;
+	margin: 70px auto 0 auto;
+}
+
+.login input{
+	padding: 10px;
+	width:100%;
+	border-radius: 0 4px 4px 0;
+}
+
+.login .userLogin{
+	width: inherit;
+	margin: 10px auto;
+	border-radius:inherit;
+	flex-direction: row;
+}
+
+.login .userLogin .bx{
+	padding: 10px;
+}
+
+
+.else{
+	justify-content: center;
+	color: #434343;
+}
+
+.userButtons{
+	width: 100%;
+	margin: auto;
+}
+
+.userButtons input,.userButtons a{
+	border-radius: 4px;
+	width: 100%;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-align: center;
+	font-size: 13px;
+}
+
+.notFound{
+	flex-direction: column;
+	justify-content:space-evenly ;
+}
+
+.notFound b{
+	font-size: 50px;
+	-webkit-font-smoothing: auto ;
+  	-moz-osx-font-smoothing: auto ;
+}
+
+.notFound span{
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+.error-for-login{
+	width: fit-content;
+	border-radius: 4px;
+	margin: auto;
+	padding: 10px 30px;
+	justify-content: center;
+}
+
+.error-for-else{
+	width: fit-content;
+	border-radius: 4px;
+	margin: 10px 0 -10px 20px;
+	padding: 10px 30px;
+	font-size: 13px;
+}
+
+.error-for-public{
+	width: fit-content;
+	border-radius: 4px;
+	font-size: 13px;
+	margin: 10px 0;
+}
+
+.error-shadow{
+	box-shadow: -1px 2px 5px #cecece;
+}
+
+.NoError{
+	padding       : 20px 45px 20px 45px;
+	margin: 0 auto;
+}
+
+.complete{
+	width: 400px;
+	background: #68F08E;
+	border-radius: 4px;
+	margin: auto;
+	padding: 10px 30px;
+	justify-content: center;
+}
+
+.overlay {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.50; 
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 11;
+}
+
+
+.back{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	position: absolute;
+	left: 1%;
+	top: 2%;
+	font-size: 20px;
+}
+.back i{
+	margin: 4px 5px;
+}
+
+.rightPanel{
+	width: 340px;
+	height: fit-content;
+	margin: 12px;
+}
+/*--------===============-=-=ДОМАШНЯ СТОРІНКА=-=-===============--------*/
+
+.lastNews{
+	width: 360px;
+	margin: 12px;
+	height: fit-content;
+}
+
+.lastNews .title,.NewPublics > .title{
+	justify-content: space-between;
+	text-align: center;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+.lastNews .title a,.NewPublics > .title a{
+	color: #000;
+	font-size: 13px;
+}
+
+.lastNews > .title i,.NewPublics > .title i{
+	vertical-align: middle;
+}
+
+.lastNews .publics{
+	flex-direction: column;
+	padding: 10px;
+}
+
+.lastNews .publics .content{
+	margin: 5px;
+}
+
+.lastNews .publics .content > div{
+	width: 100%;
+	margin: 7px;
+}
+
+.lastNews .publics .discription{
+	font-size: 12px;
+}
+
+.lastNews .publics .date{
+	margin-left: 15px;
+}
+
+
+.NewPublics{
+	width: auto;
+	margin: 12px;
+
+}
+
+.NewPublics > .title,.rightPanel > .title,.publics form > .title{
+	text-align: center;
+	font-size: 18px;
+	padding: 5px 20px;
+	
+	width: auto;
+}
+
+.NewPublics .title span{
+	vertical-align: middle;
+	width: auto;
+}
+
+.title ~ .publics{
+	width:100%;
+	margin: auto;
+}
+
+.Finded .publics{
+	width: 100%;
+}
+
+.foldersContent .publics{
+	width: 100%;
+}
+
+.headerPictr ~ .profileContent > .leftMenu ~ .foldersContent .publics{
+	width: 85%;
+	margin: auto;
+}
+
+.wrapper-center {
+	width: 100%;
+   	flex-wrap: wrap;
+
+}
+
+.rightPanel .wrapper-center {
+	width: 100%;
+   	flex-wrap: wrap;
+   	justify-content: center;
+
+}
+
+.publics .picture{
+	position: relative;
+	width: 100%;
+	height: 70%;
+	border-radius: 5px 5px  0 0 ;
+}
+
+.publics .picture img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	
+	object-fit:cover;
+	border-radius: 5px 5px  0 0 ;
+}
+
+.picture{
+	width: 100%;
+	height: auto;
+}
+
+.picture + .discription > span{
+	line-height:25px;
+}
+
+
+.picture img{
+	
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+
+
+/*-------B-L-O-C-K-------------------*/
+.smallblock{
+	width: 260px;
+	height: 200px;
+	z-index: 1;
+	margin: 17px;
+}
+
+.smallblock .content{
+	width: 260px;
+	height: 200px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.bigblock{
+	width: 330px;
+	height: 200px;
+	z-index: 1;
+	margin: 17px;
+}
+
+.bigblock .content{
+	width: 330px;
+	height: 200px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.block .type{
+	position: absolute;
+	margin: 10px 0 0 -10px;
+	width: 100px;
+	height: 30px;
+	box-shadow: 1px 1px 5px #565656;
+	border-radius: 5px;
+	z-index: 2;
+	align-items: center;
+	justify-content: center;	
+}
+
+
+.block .news{
+	background:  linear-gradient(135deg,#7B47E2,#7C51D1);
+}
+
+.block .mods{
+	background:  linear-gradient(135deg,#F32A46,#DA132E);
+}
+
+.block .textures{
+	background:  linear-gradient(135deg,#37C36F,#45B59E);
+}
+
+.block .data-packs{
+	background:  linear-gradient(135deg,#ED9619,#EA7026);
+}
+
+.block .java{
+	background:  linear-gradient(135deg,#ED9619,#EA7026);
+}
+
+.block .bedrock{
+	background:  linear-gradient(135deg,#505ED2,#5085D2);
+}
+
+.block > div > .line{
+	width: 80%;
+	text-align: center;
+	height: auto;
+	font-size: 14px;
+	font-family: sf-ui-text-regular,sans-serif;
+}
+
+.block .type .fl{
+	display: block;
+	height: 10px;
+}	
+
+.block .picture{
+	position: relative;
+	width: 100%;
+	height: 70%;
+	border-radius: 5px 5px 0 0;
+}
+
+.block .picture:hover,.block .type:hover .content .picture{
+	width: 100%;
+	height: 70%;
+	background:  #525252;
+	opacity: 0.8;
+}
+
+.block .picture:hover .circles{
+	visibility: visible;
+}
+
+.block .content > .discription{
+	width: 100%;
+	height: 30%;
+	border-radius: 0 0 5px 5px;
+	flex-direction: column;
+	justify-content: space-between;
+	word-wrap: break-word;
+}
+
+.pinfo{
+	font-family: sf-ui-text-regular,sans-serif;
+	justify-content: space-between;
+	margin: 0 10px;
+	font-size: 12px;
+}
+
+.pinfo .info i{
+	font-size: 14px;
+}
+
+.pinfo .info span{
+	vertical-align: top;
+	flex-direction: column;
+}
+
+.block .discription .pinfo .info .likes{
+	margin-right: 10px;
+}
+
+.block .discription .pinfo .info .infos{
+	flex-direction: column;
+}
+
+.block .discription .pinfo .date{
+	font-size: 10px;
+}
+
+.block .discription .line{
+	width: 90%;
+	padding:  5px 10px;
+	font-size: 12px;
+}
+
+.block .discription .title{
+	width: 90%;
+	padding:  2px 10px;
+	font-size: 14px;
+}
+
+
+.delete, .update,.hide{
+	width: 30px;
+	height: 30px;
+	background:  #00000095;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 20px;
+}
+
+.delete i, .update i,.hide i{
+	margin: 5px;
+}
+
+.delete:hover, .update:hover,.hide:hover{
+	background:  #000;
+}
+
+.block .circles{
+	width: 10%;
+	padding: 5px;
+	visibility: hidden;
+	position: relative;
+	float: right;
+}
+
+.block .circles div{
+	margin: 5px;
+}
+
+
+	/*--------===============-=-=ДОДАТИ СТОРІНКА=-=-===============--------*/
+
+.AddPublic{
+	flex-direction: column;
+}
+
+.SubmitAdding{
+	width: 100%;
+	margin: auto;
+	padding: 10px 0;
+}
+
+
+.SubmitAdding input{
+	border-radius: 4px;
+	width: 20%;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 8px;
+	margin: auto;
+}
+
+
+.fileLabelImg,.fileLabelFile{
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+	cursor: pointer;
+	border: 2px dashed lightgrey;
+}
+
+.fileLabelImg{
+	width:610px;
+	height: 300px;
+	margin: auto;
+	
+}
+.fileLabelFile{
+	height: 30px;
+}
+
+.addfiles, .addtext{
+	padding: 20px;
+	flex-direction: column;
+}
+
+.addtext{
+	width: 70%;
+	margin: auto;
+}
+
+.addtext input,.addtext textarea{
+	padding: 15px;
+	border-radius: 4px;
+	width: 580px;
+	
+}
+.addtext select{
+	padding: 15px;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.addtext textarea{
+	height: 150px;
+}
+
+.addtext .labelTitle{
+	margin: 20px 0 8px 0;
+	width: 100%;
+}
+
+.addfile .labelTitle{
+	margin: 20px auto;
+	width: 610px;
+}
+
+
+
+
+
+.thematic{
+	border-radius: 4px;
+	display:inline-block;
+	font-size:12px; 
+	margin: 5px;
+	cursor: pointer;
+}
+
+.thematic-active{
+	border-radius: 4px;
+	display:inline-block;
+	font-size:13px; 
+	margin: 5px;
+	cursor: pointer;
+}
+}
